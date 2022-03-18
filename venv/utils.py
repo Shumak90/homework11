@@ -35,7 +35,7 @@ def get_candidates_by_skill(skill_name):
 
 
 # print(load_candidates_from_json(candidates))
-print(get_candidate(2)["name"])
+# print(get_candidate(2)["name"])
 # print(get_candidates_by_name("She"))
 # # print(get_candidates_by_skill("python"))
 # for i in load_candidates_from_json(candidates):
