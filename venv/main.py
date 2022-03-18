@@ -8,13 +8,11 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     candidate_list = []
-    candidate_id = []
     candidates = load_candidates_from_json(candidates_json())
     for candidate in candidates:
         candidate_list.append(candidate["name"])
-        candidate_id.append(candidate["id"])
 
-    return render_template("list.html", candidates = candidate_list, candidate_id = candidate_id)
+    return render_template("list.html", candidates = candidate_list)
 
 @app.route("/candidate/<x>")
 def candidate(x):
