@@ -8,6 +8,7 @@ def load_candidates_from_json(path):
         candidate_list.append(candidate)
     return candidate_list
 
+
 def get_candidate(candidate_id):
     """возвращает одного кандидата по его id"""
     for candidate in candidates:
@@ -33,10 +34,3 @@ def get_candidates_by_skill(skill_name):
                 candidate_list.append(candidate["name"])
     return candidate_list
 
-
-# print(load_candidates_from_json(candidates))
-# print(get_candidate(2)["name"])
-# print(get_candidates_by_name("She"))
-# # print(get_candidates_by_skill("python"))
-# for i in load_candidates_from_json(candidates):
-#     print(i["name"])
